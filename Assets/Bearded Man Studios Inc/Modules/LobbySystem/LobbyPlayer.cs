@@ -4,54 +4,47 @@ using System;
 
 namespace BeardedManStudios.Forge.Networking.Unity.Lobby
 {
-	public class LobbyPlayer : IClientMockPlayer
-	{
-		private string _name;
-		public string Name
-		{
-			get
-			{
-				return _name;
-			}
-			set
-			{
-				_name = value;
-			}
-		}
+    public class LobbyPlayer : IClientMockPlayer
+    {
+        private string _name;
 
-		private uint _networkID;
-		public uint NetworkId
-		{
-			get
-			{
-				return _networkID;
-			}
+        public string Name
+        {
+            get => _name;
+            set => _name = value;
+        }
 
-			set
-			{
-				_networkID = value;
-			}
-		}
+        private uint _networkID;
+
+        public uint NetworkId
+        {
+            get => _networkID;
+
+            set => _networkID = value;
+        }
 
         private int _avatarID;
-		public int AvatarID
+
+        public int AvatarID
         {
-            get { return _avatarID; }
-            set { _avatarID = value; }
+            get => _avatarID;
+            set => _avatarID = value;
         }
 
         private int _teamID;
-		public int TeamID
+
+        public int TeamID
         {
-            get { return _teamID; }
-            set { _teamID = value; }
+            get => _teamID;
+            set => _teamID = value;
         }
 
         private bool _created;
+
         public bool Created
         {
-            get { return _created; }
-            set { _created = value; }
+            get => _created;
+            set => _created = value;
         }
-	}
+    }
 }

@@ -3,13 +3,13 @@
 namespace BeardedManStudios.Forge.Networking.Generated
 {
     [AttributeUsage(AttributeTargets.All)]
-    public class GeneratedInterpolAttribute : System.Attribute
+    public class GeneratedInterpolAttribute : Attribute
     {
         public readonly string JsonData;
 
         public GeneratedInterpolAttribute(string data)
         {
-            this.JsonData = data;
+            JsonData = data;
         }
 
         public override string ToString()

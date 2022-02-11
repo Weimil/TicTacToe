@@ -12,7 +12,7 @@ namespace BeardedManStudios
         public readonly int maxBufferPages;
         private readonly object @lock = new object();
 
-        public long MaxBufferPoolSize { get { return bufferSize * (long)bufferPageSize * maxBufferPages; } }
+        public long MaxBufferPoolSize => bufferSize * (long) bufferPageSize * maxBufferPages;
 
         private readonly ConcurrentQueue<ArraySegment<byte>> POOLED_BUFFERS = new ConcurrentQueue<ArraySegment<byte>>();
         private readonly byte[][] PAGES;
@@ -21,7 +21,7 @@ namespace BeardedManStudios
         {
             if (buffersSize < 1 || bufferPageSize < 1 || maxBufferPages < 1)
                 throw new ArgumentOutOfRangeException("Arguments must be positive.");
-            this.bufferSize = buffersSize;
+            bufferSize = buffersSize;
             this.bufferPageSize = bufferPageSize;
             this.maxBufferPages = maxBufferPages;
             PAGES = new byte[maxBufferPages][];
@@ -41,7 +41,7 @@ namespace BeardedManStudios
                 return BinarySearchForFirstNull(array, midpoint + 1, end);
 
             // Match
-            if ((midpoint == 0) || (array.GetValue(midpoint - 1) != null))
+            if (midpoint == 0 || array.GetValue(midpoint - 1) != null)
                 return midpoint;
 
             // Not first null, so no match
@@ -50,13 +50,9 @@ namespace BeardedManStudios
 
         private bool AddPage()
         {
-
             lock (@lock)
             {
-                if (POOLED_BUFFERS.Count > 0)
-                {
-                    return true;
-                }
+                if (POOLED_BUFFERS.Count > 0) return true;
                 int index = BinarySearchForFirstNull(PAGES, 0, PAGES.Length);
                 if (index < 0)
                     return false; // PAGES is full
@@ -64,7 +60,7 @@ namespace BeardedManStudios
                 for (int i = 0; i < bufferPageSize; i++)
                     POOLED_BUFFERS.Enqueue(new ArraySegment<byte>(PAGES[index], i * bufferSize, bufferSize));
             }
-            
+
             return true;
         }
 

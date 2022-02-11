@@ -45,18 +45,16 @@ namespace BeardedManStudios.Forge.Networking
                 }
 
                 if (rewinds.Count > 0)
-                {
                     for (int i = 0; i < keys.Count; i++)
-                    {
                         if (keys[i] < timestep - RewindTime && RewindTime < timestep)
                         {
                             rewinds.Remove(keys[i]);
                             keys.RemoveAt(i--);
                         }
                         else
+                        {
                             break;
-                    }
-                }
+                        }
 
                 rewinds.Add(timestep, value);
                 keys.Add(timestep);
@@ -73,7 +71,7 @@ namespace BeardedManStudios.Forge.Networking
             lock (rewinds)
             {
                 if (rewinds.Count == 0)
-                    return default(T);
+                    return default;
 
                 T result;
                 if (rewinds.TryGetValue(timestep, out result))
@@ -109,7 +107,7 @@ namespace BeardedManStudios.Forge.Networking
         {
             lock (rewinds)
             {
-                lower = default(T);
+                lower = default;
                 upper = lower;
 
                 if (rewinds.Count == 0)
@@ -121,10 +119,8 @@ namespace BeardedManStudios.Forge.Networking
                 ulong key = 0, lowerKey = 0, upperKey = 0;
 
                 if (keys.Last() < timestep)
-                {
                     // TODO:  The supplied time does not exist, throw exception?
-                    return default(T);
-                }
+                    return default;
 
                 foreach (ulong k in keys)
                 {
@@ -162,17 +158,14 @@ namespace BeardedManStudios.Forge.Networking
                 if (rewinds.Count == 0)
                     return found;
 
-                var keys = rewinds.Keys.ToArray().Reverse();
+                IEnumerable<ulong> keys = rewinds.Keys.ToArray().Reverse();
                 ulong lastKey = 0;
 
                 if (keys.First() < timestep)
-                {
                     // TODO:  The supplied time does not exist, throw exception?
                     return found;
-                }
 
                 foreach (ulong k in keys)
-                {
                     if (timestep <= k)
                     {
                         if (timestep != k && lastKey != 0)
@@ -187,8 +180,9 @@ namespace BeardedManStudios.Forge.Networking
                             break;
                     }
                     else
+                    {
                         lastKey = k;
-                }
+                    }
 
                 return found;
             }
@@ -209,19 +203,15 @@ namespace BeardedManStudios.Forge.Networking
                 if (rewinds.Count == 0)
                     return found;
 
-                var keys = rewinds.Keys.ToArray().Reverse();
+                IEnumerable<ulong> keys = rewinds.Keys.ToArray().Reverse();
 
                 if (keys.First() < timestepMin)
-                {
                     // TODO:  The supplied time does not exist, throw exception?
                     return found;
-                }
 
                 foreach (ulong k in keys)
-                {
                     if (timestepMin <= k && timestepMax >= k)
                         found.Insert(0, rewinds[k]);
-                }
 
                 return found;
             }

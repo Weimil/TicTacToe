@@ -8,14 +8,14 @@ namespace BeardedManStudios.Concurrency
     internal class SpinLock
     {
         private int @lock = 0;
+
         public void Enter(ref bool lockTaken)
         {
             if (lockTaken)
                 throw new ArgumentException("Lock was already taken.");
             while (1 == Interlocked.CompareExchange(ref @lock, 1, 0))
-            {
-                while (@lock == 1) ;
-            }
+            while (@lock == 1)
+                ;
             lockTaken = true;
         }
 
@@ -39,12 +39,14 @@ namespace BeardedManStudios.Concurrency
                 {
                     result = Dequeue();
                     return true;
-                } else
+                }
+                else
                 {
-                    result = default(T);
+                    result = default;
                     return false;
                 }
-            } finally
+            }
+            finally
             {
                 if (lockTaken) @lock.Exit();
             }
@@ -57,7 +59,8 @@ namespace BeardedManStudios.Concurrency
             {
                 @lock.Enter(ref lockTaken);
                 base.Enqueue(item);
-            } finally
+            }
+            finally
             {
                 if (lockTaken) @lock.Exit();
             }

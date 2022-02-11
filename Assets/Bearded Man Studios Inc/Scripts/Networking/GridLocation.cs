@@ -12,13 +12,13 @@ namespace BeardedManStudios
 
         public GridLocation(float X, float Y, float cellSize)
         {
-            x = (int)(X / cellSize);
-            y = (int)(Y / cellSize);
+            x = (int) (X / cellSize);
+            y = (int) (Y / cellSize);
         }
 
         public bool IsSameOrNeighbourCell(GridLocation otherLocation)
         {
-            if (otherLocation.x == x && otherLocation.y == y || 
+            if (otherLocation.x == x && otherLocation.y == y ||
                 otherLocation.x == x - 1 && otherLocation.y == y - 1 ||
                 otherLocation.x == x - 1 && otherLocation.y == y ||
                 otherLocation.x == x - 1 && otherLocation.y == y + 1 ||
@@ -27,7 +27,7 @@ namespace BeardedManStudios
                 otherLocation.x == x + 1 && otherLocation.y == y - 1 ||
                 otherLocation.x == x + 1 && otherLocation.y == y ||
                 otherLocation.x == x + 1 && otherLocation.y == y + 1
-                )
+            )
                 return true;
 
             return false;

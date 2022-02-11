@@ -5,80 +5,89 @@ using UnityEngine;
 
 namespace BeardedManStudios.Forge.Networking.Generated
 {
-	[GeneratedInterpol("{\"inter\":[]")]
-	public partial class GameNetworkNetworkObject : NetworkObject
-	{
-		public const int IDENTITY = 8;
+    [GeneratedInterpol("{\"inter\":[]")]
+    public partial class GameNetworkNetworkObject : NetworkObject
+    {
+        public const int IDENTITY = 8;
 
-		private byte[] _dirtyFields = new byte[0];
+        private byte[] _dirtyFields = new byte[0];
 
-		#pragma warning disable 0067
-		public event FieldChangedEvent fieldAltered;
-		#pragma warning restore 0067
+#pragma warning disable 0067
+        public event FieldChangedEvent fieldAltered;
+#pragma warning restore 0067
 
-		protected override void OwnershipChanged()
-		{
-			base.OwnershipChanged();
-			SnapInterpolations();
-		}
-		
-		public void SnapInterpolations()
-		{
-		}
+        protected override void OwnershipChanged()
+        {
+            base.OwnershipChanged();
+            SnapInterpolations();
+        }
 
-		public override int UniqueIdentity { get { return IDENTITY; } }
+        public void SnapInterpolations()
+        {
+        }
 
-		protected override BMSByte WritePayload(BMSByte data)
-		{
+        public override int UniqueIdentity => IDENTITY;
 
-			return data;
-		}
+        protected override BMSByte WritePayload(BMSByte data)
+        {
+            return data;
+        }
 
-		protected override void ReadPayload(BMSByte payload, ulong timestep)
-		{
-		}
+        protected override void ReadPayload(BMSByte payload, ulong timestep)
+        {
+        }
 
-		protected override BMSByte SerializeDirtyFields()
-		{
-			dirtyFieldsData.Clear();
-			dirtyFieldsData.Append(_dirtyFields);
+        protected override BMSByte SerializeDirtyFields()
+        {
+            dirtyFieldsData.Clear();
+            dirtyFieldsData.Append(_dirtyFields);
 
 
-			// Reset all the dirty fields
-			for (int i = 0; i < _dirtyFields.Length; i++)
-				_dirtyFields[i] = 0;
+            // Reset all the dirty fields
+            for (int i = 0; i < _dirtyFields.Length; i++)
+                _dirtyFields[i] = 0;
 
-			return dirtyFieldsData;
-		}
+            return dirtyFieldsData;
+        }
 
-		protected override void ReadDirtyFields(BMSByte data, ulong timestep)
-		{
-			if (readDirtyFlags == null)
-				Initialize();
+        protected override void ReadDirtyFields(BMSByte data, ulong timestep)
+        {
+            if (readDirtyFlags == null)
+                Initialize();
 
-			Buffer.BlockCopy(data.byteArr, data.StartIndex(), readDirtyFlags, 0, readDirtyFlags.Length);
-			data.MoveStartIndex(readDirtyFlags.Length);
+            Buffer.BlockCopy(data.byteArr, data.StartIndex(), readDirtyFlags, 0, readDirtyFlags.Length);
+            data.MoveStartIndex(readDirtyFlags.Length);
+        }
 
-		}
+        public override void InterpolateUpdate()
+        {
+            if (IsOwner)
+                return;
+        }
 
-		public override void InterpolateUpdate()
-		{
-			if (IsOwner)
-				return;
+        private void Initialize()
+        {
+            if (readDirtyFlags == null)
+                readDirtyFlags = new byte[0];
+        }
 
-		}
+        public GameNetworkNetworkObject() : base()
+        {
+            Initialize();
+        }
 
-		private void Initialize()
-		{
-			if (readDirtyFlags == null)
-				readDirtyFlags = new byte[0];
+        public GameNetworkNetworkObject(NetWorker networker, INetworkBehavior networkBehavior = null,
+            int createCode = 0, byte[] metadata = null) : base(networker, networkBehavior, createCode, metadata)
+        {
+            Initialize();
+        }
 
-		}
+        public GameNetworkNetworkObject(NetWorker networker, uint serverId, FrameStream frame) : base(networker,
+            serverId, frame)
+        {
+            Initialize();
+        }
 
-		public GameNetworkNetworkObject() : base() { Initialize(); }
-		public GameNetworkNetworkObject(NetWorker networker, INetworkBehavior networkBehavior = null, int createCode = 0, byte[] metadata = null) : base(networker, networkBehavior, createCode, metadata) { Initialize(); }
-		public GameNetworkNetworkObject(NetWorker networker, uint serverId, FrameStream frame) : base(networker, serverId, frame) { Initialize(); }
-
-		// DO NOT TOUCH, THIS GETS GENERATED PLEASE EXTEND THIS CLASS IF YOU WISH TO HAVE CUSTOM CODE ADDITIONS
-	}
+        // DO NOT TOUCH, THIS GETS GENERATED PLEASE EXTEND THIS CLASS IF YOU WISH TO HAVE CUSTOM CODE ADDITIONS
+    }
 }

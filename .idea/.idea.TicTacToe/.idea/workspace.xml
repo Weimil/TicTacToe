@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b5d1e6c9-f98c-497e-84fe-0700beefb8c9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PSP-NumeroIndefinidoFormandoUnaLinea/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PSP-NumeroIndefinidoFormandoUnaLinea/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PSP-NumeroIndefinidoFormandoUnaLinea/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TicTacToe/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TicTacToe/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeAcceptableFieldTypes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeAcceptableFieldTypes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeAcceptableRPCTypes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeAcceptableRPCTypes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeBaseClassType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeBaseClassType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeClassFieldRPCValue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeClassFieldRPCValue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeClassFieldValue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeClassFieldValue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeClassIdentity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeClassIdentity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeClassObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeClassObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeClassRPCValue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeClassRPCValue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeClassRewindValue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeClassRewindValue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeEditorButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeEditorButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeEditorField.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeEditorField.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeEditorRPCField.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeEditorRPCField.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeNRPCTypes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeNRPCTypes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeNetworkingAboutEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeNetworkingAboutEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeNetworkingEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ForgeNetworkingEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/IFNSerializable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/IFNSerializable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/SimpleJSONEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/SimpleJSONEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ValidationResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/ValidationResult.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Examples/Cube Forge/CubeForgeGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Examples/Cube Forge/CubeForgeGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Examples/Cube Forge/Materials/Camera.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Examples/Cube Forge/Materials/Camera.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Examples/Cube Forge/Prefabs/Cube.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Examples/Cube Forge/Prefabs/Cube.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Examples/Cube Forge/Prefabs/Network Camera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Examples/Cube Forge/Prefabs/Network Camera.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Examples/Cube Forge/Scripts/CubeForgeGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Examples/Cube Forge/Scripts/CubeForgeGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Examples/Cube Forge/Scripts/NetCam.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Examples/Cube Forge/Scripts/NetCam.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Examples/Cube Forge/Scripts/Primitive.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Examples/Cube Forge/Scripts/Primitive.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Examples/Proximity/ExampleProximity.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Examples/Proximity/ExampleProximity.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Examples/Proximity/ExampleProximityPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Examples/Proximity/ExampleProximityPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Examples/Proximity/ExampleProximitySpawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Examples/Proximity/ExampleProximitySpawn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Examples/Proximity/ProximityPlayer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Examples/Proximity/ProximityPlayer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/NetworkManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/NetworkManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/NetworkObjectFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/NetworkObjectFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/ChatManagerBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/ChatManagerBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/ChatManagerNetworkObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/ChatManagerNetworkObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/CubeForgeGameBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/CubeForgeGameBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/CubeForgeGameNetworkObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/CubeForgeGameNetworkObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/ExampleProximityPlayerBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/ExampleProximityPlayerBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/ExampleProximityPlayerNetworkObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/ExampleProximityPlayerNetworkObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/GameNetworkBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/GameNetworkBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/GameNetworkNetworkObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/GameNetworkNetworkObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/NetBoardManagerBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/NetBoardManagerBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/NetBoardManagerNetworkObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/NetBoardManagerNetworkObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/NetworkCameraBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/NetworkCameraBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/NetworkCameraNetworkObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/NetworkCameraNetworkObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/TestBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/TestBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/TestNetworkObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/TestNetworkObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Modules/Chat/Chat Maker.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Modules/Chat/Chat Maker.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Modules/Chat/ChatMaker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Modules/Chat/ChatMaker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Modules/Chat/ChatManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Modules/Chat/ChatManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Modules/LobbySystem/LobbyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Modules/LobbySystem/LobbyManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Modules/LobbySystem/LobbyPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Modules/LobbySystem/LobbyPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Modules/LobbySystem/LobbyPlayerItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Modules/LobbySystem/LobbyPlayerItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Modules/Stand Alone Chat/StandAloneChat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Modules/Stand Alone Chat/StandAloneChat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Modules/VOIP/VOIP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Modules/VOIP/VOIP.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Modules/VOIP/VoipStarter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Modules/VOIP/VoipStarter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/BMSUnityExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/BMSUnityExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/ForgeGeneratedField.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/ForgeGeneratedField.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/GeneratedInterpolAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/GeneratedInterpolAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/GeneratedRPCAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/GeneratedRPCAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/GeneratedRPCVariableNamesAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/GeneratedRPCVariableNamesAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/InterpolateQuaternion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/InterpolateQuaternion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/InterpolateVector2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/InterpolateVector2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/InterpolateVector3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/InterpolateVector3.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/InterpolateVector4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/InterpolateVector4.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Logging/BMSLogger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Logging/BMSLogger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/MainThreadManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/MainThreadManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Multiplayer Menu/MultiplayerMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Multiplayer Menu/MultiplayerMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/NetworkBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/NetworkBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/NetworkManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/NetworkManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/NetworkObjectFactoryBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/NetworkObjectFactoryBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/ArgumentParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/ArgumentParser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/BMSByte.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/BMSByte.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/BMSExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/BMSExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/BeardedMath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/BeardedMath.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/BufferManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/BufferManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Concurrency.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Concurrency.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/DataStore/Cache.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/DataStore/Cache.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Logging/BMSLog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Logging/BMSLog.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Logging/IBMSLogger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Logging/IBMSLogger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/BasePacketComposer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/BasePacketComposer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/BaseSteamP2P.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/BaseSteamP2P.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/BaseTCP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/BaseTCP.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/BaseUDP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/BaseUDP.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/CachedSteamP2PClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/CachedSteamP2PClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/CachedUdpClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/CachedUdpClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/CommonServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/CommonServer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Enums/Receivers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Enums/Receivers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Exceptions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Exceptions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Filters/IConnectionFilter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Filters/IConnectionFilter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Frame/Binary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Frame/Binary.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Frame/ConnectionClose.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Frame/ConnectionClose.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Frame/Continuation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Frame/Continuation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Frame/Error.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Frame/Error.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Frame/Factory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Frame/Factory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Frame/FrameStream.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Frame/FrameStream.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Frame/Ping.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Frame/Ping.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Frame/Pong.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Frame/Pong.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Frame/Text.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Frame/Text.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/IClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/IClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/IClientMockPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/IClientMockPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/IUserAuthenticator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/IUserAuthenticator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Lobby/ILobbyMaster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Lobby/ILobbyMaster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Lobby/LobbyService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Lobby/LobbyService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/LocalNetworkScanning.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/LocalNetworkScanning.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/MasterServerResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/MasterServerResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Nat/NatHolePunch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Nat/NatHolePunch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/NetWorker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/NetWorker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/NetworkingPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/NetworkingPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/ObjectMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/ObjectMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Objects/IInterpolator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Objects/IInterpolator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Objects/INetworkBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Objects/INetworkBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Objects/INetworkObjectFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Objects/INetworkObjectFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Objects/InterpolateDouble.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Objects/InterpolateDouble.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Objects/InterpolateFloat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Objects/InterpolateFloat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Objects/Interpolated.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Objects/Interpolated.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Objects/NetworkObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Objects/NetworkObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Objects/Rewind.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Objects/Rewind.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/RPCInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/RPCInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/RouterIds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/RouterIds.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Rpc.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Rpc.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/RpcArgs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/RpcArgs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/SteamP2PClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/SteamP2PClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/SteamP2PPacketComposer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/SteamP2PPacketComposer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/SteamP2PServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/SteamP2PServer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/TCPClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/TCPClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/TCPClientBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/TCPClientBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/TCPClientWebsockets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/TCPClientWebsockets.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/TCPMasterClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/TCPMasterClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/TCPServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/TCPServer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Time.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Time.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/UDPClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/UDPClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/UDPGroupIds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/UDPGroupIds.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/UDPNetworkingPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/UDPNetworkingPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/UDPPacket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/UDPPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/UDPPacketComposer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/UDPPacketComposer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/UDPPacketGroup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/UDPPacketGroup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/UDPPacketManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/UDPPacketManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/UDPPacketSequence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/UDPPacketSequence.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/UDPServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/UDPServer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Websockets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/Websockets.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/GridLocation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/GridLocation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Logging/ForgeLogger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Logging/ForgeLogger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/SimpleJSON.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/SimpleJSON.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Threading/Task.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Threading/Task.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Vector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Vector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Server Browser/ServerBrowser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Server Browser/ServerBrowser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Server Browser/ServerBrowserItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Server Browser/ServerBrowserItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/TemplateSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/TemplateSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/UnityObjectMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/UnityObjectMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game.cs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/Class/DAM-2/PSP/_Downloads/20220114 Desconnexio/Assets/Usuari.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$USER_HOME$/Class/DAM-2/PSP/_Downloads/20220114 Desconnexio/Assets/Usuari.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Game.cs" />
+    </changedPaths>
+  </component>
+  <component name="ProjectId" id="24xIKsKIXM7tvFKH2bHfU5SrVfS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Build/20220211.x86_64" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Build" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b5d1e6c9-f98c-497e-84fe-0700beefb8c9" name="Default Changelist" comment="" />
+      <created>1644565752567</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1644565752567</updated>
+      <workItem from="1644565760570" duration="590000" />
+      <workItem from="1644566376536" duration="6077000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

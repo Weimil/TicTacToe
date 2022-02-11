@@ -19,8 +19,8 @@
 
 namespace BeardedManStudios.Forge.Networking
 {
-	public interface IClient
-	{
-		NetworkingPlayer Server { get; }
-	}
+    public interface IClient
+    {
+        NetworkingPlayer Server { get; }
+    }
 }

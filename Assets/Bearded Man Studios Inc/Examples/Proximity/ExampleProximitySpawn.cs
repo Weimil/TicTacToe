@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class ExampleProximitySpawn : MonoBehaviour
 {
-	private void Start()
-	{
-		NetworkManager.Instance.InstantiateExampleProximityPlayer();
-	}
+    private void Start()
+    {
+        NetworkManager.Instance.InstantiateExampleProximityPlayer();
+    }
 }

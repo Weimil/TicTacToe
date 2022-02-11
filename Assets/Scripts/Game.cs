@@ -1,20 +1,23 @@
 using System;
+using System.Collections;
 using System.Linq;
 using BeardedManStudios.Forge.Networking;
 using BeardedManStudios.Forge.Networking.Generated;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Game : GameNetworkBehavior
 {
     [SerializeField] private Sprite[] _sprites;
+    private WaitForSeconds _waitForSeconds;
     private GameObject _buttonParent;
     private Button[] _buttons;
     private Text[] _buttonsText;
     private GameObject _gameOverParent;
     private Button _restart;
     private int _playerId;
-
+    private Coroutine _selfDestruction;
 
     private void Start()
     {
@@ -24,6 +27,8 @@ public class Game : GameNetworkBehavior
         _buttons = _buttonParent.GetComponentsInChildren<Button>();
         _buttonsText = new Text[_buttons.Length];
         _restart.onClick.AddListener(ExecuteRestartGame);
+        _waitForSeconds = new WaitForSeconds(5f);
+
         for (int i = 0; i < _buttons.Length; i++)
         {
             int nI = i;
@@ -73,7 +78,7 @@ public class Game : GameNetworkBehavior
         );
     }
 
-    public override void RestartGame(RpcArgs args) 
+    public override void RestartGame(RpcArgs args)
     {
         GameDefaults();
     }
@@ -85,11 +90,9 @@ public class Game : GameNetworkBehavior
                 _buttonsText[0].text == str && _buttonsText[1].text == str && _buttonsText[2].text == str ||
                 _buttonsText[3].text == str && _buttonsText[4].text == str && _buttonsText[5].text == str ||
                 _buttonsText[6].text == str && _buttonsText[7].text == str && _buttonsText[8].text == str ||
-                
                 _buttonsText[0].text == str && _buttonsText[3].text == str && _buttonsText[6].text == str ||
                 _buttonsText[1].text == str && _buttonsText[4].text == str && _buttonsText[7].text == str ||
                 _buttonsText[2].text == str && _buttonsText[5].text == str && _buttonsText[8].text == str ||
-                
                 _buttonsText[2].text == str && _buttonsText[4].text == str && _buttonsText[6].text == str ||
                 _buttonsText[0].text == str && _buttonsText[4].text == str && _buttonsText[8].text == str;
 
@@ -103,5 +106,46 @@ public class Game : GameNetworkBehavior
         _playerId = 1;
         _buttonParent.SetActive(true);
         _gameOverParent.SetActive(false);
+    }
+
+    protected override void NetworkStart()
+    {
+        base.NetworkStart();
+
+        if (networkObject.IsOwner)
+            StartCoroutine(LifeSignal());
+        else
+            _selfDestruction = StartCoroutine(SelfDestruction());
+
+    }
+    
+    private void ExecuteSendLiveSignal()
+    {
+        networkObject.SendRpc(
+            RPC_SEND_LIVE_SIGNAL,
+            Receivers.Others
+        );
+    }
+
+    public override void SendLiveSignal(RpcArgs args)
+    {
+        StopCoroutine(_selfDestruction);
+        _selfDestruction = StartCoroutine(SelfDestruction());
+    }
+
+    private IEnumerator LifeSignal()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(2f);
+            ExecuteSendLiveSignal();
+        }
+    }
+
+    private IEnumerator SelfDestruction()
+    {
+        yield return new WaitForSeconds(4f);
+        SceneManager.UnloadSceneAsync("SampleScene");
+        SceneManager.LoadScene("MultiplayerMenu");
     }
 }

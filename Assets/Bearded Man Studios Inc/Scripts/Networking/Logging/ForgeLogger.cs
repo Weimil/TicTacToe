@@ -16,19 +16,31 @@ namespace BeardedManStudios.Source.Logging
         }
 
         public static string LogDirectory = "ForgeNetworking";
-        private static string ForgeLog { get { return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), LogDirectory); } }
+
+        private static string ForgeLog =>
+            Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), LogDirectory);
 
         private static void Echo(object message, EchoType echoType)
         {
 #if UNITY_EDITOR
             if (echoType == EchoType.Debug)
+            {
                 UnityEngine.Debug.Log(message);
+            }
             else if (echoType == EchoType.Warning)
+            {
                 UnityEngine.Debug.LogWarning(message);
+            }
             else if (echoType == EchoType.Error)
+            {
                 UnityEngine.Debug.LogError(message);
+            }
             else if (echoType == EchoType.Exception)
-                UnityEngine.Debug.LogException(message is string ? new Exception(message.ToString()) : (Exception)message);
+            {
+                UnityEngine.Debug.LogException(message is string
+                    ? new Exception(message.ToString())
+                    : (Exception) message);
+            }
             else if (echoType == EchoType.WTF)
             {
                 UnityEngine.Debug.Log(message);
@@ -99,7 +111,8 @@ namespace BeardedManStudios.Source.Logging
             fullMessage.AppendLine("Exception Message: " + e.Message);
             fullMessage.AppendLine("Trace:");
             fullMessage.Append(Environment.NewLine + e.StackTrace.ToString());
-            string finalMessage = "---------" + Environment.NewLine + "EXCEPTION:" + Environment.NewLine + fullMessage.ToString() + Environment.NewLine + "---------";
+            string finalMessage = "---------" + Environment.NewLine + "EXCEPTION:" + Environment.NewLine +
+                                  fullMessage.ToString() + Environment.NewLine + "---------";
 
             Log(finalMessage);
 
@@ -110,7 +123,6 @@ namespace BeardedManStudios.Source.Logging
 #else
                 Echo(finalMessage, EchoType.Exception);
 #endif
-
             }
         }
 

@@ -1,5 +1,4 @@
 ﻿using System;
-
 #if WINDOWS_UWP
 using Windows.Networking.Sockets;
 using Windows.Networking;
@@ -7,7 +6,6 @@ using System.IO;
 #else
 using System.Net.Sockets;
 #endif
-
 using BeardedManStudios.Forge.Networking.Frame;
 using BeardedManStudios.Threading;
 
@@ -31,26 +29,28 @@ namespace BeardedManStudios.Forge.Networking
         /// </summary>
         private bool headerExchanged = false;
 
-		/// <summary>
-		/// Whether we are disconnected or not
-		/// </summary>
-		//private bool disconnectedSelf = false;
+        /// <summary>
+        /// Whether we are disconnected or not
+        /// </summary>
+        //private bool disconnectedSelf = false;
+        [Obsolete("This event is obsolete. Use connectAttemptFailed instead.")]
+        public event BaseNetworkEvent ConnectAttemptFailed;
 
-		[Obsolete("This event is obsolete. Use connectAttemptFailed instead.")]
-	    public event BaseNetworkEvent ConnectAttemptFailed;
-	    public event BaseNetworkEvent connectAttemptFailed;
-        byte[] buffer = new byte[8192];
+        public event BaseNetworkEvent connectAttemptFailed;
+        private byte[] buffer = new byte[8192];
 
         /// <summary>
-		/// The identity of the server as a networking player
-		/// </summary>
+        /// The identity of the server as a networking player
+        /// </summary>
         protected NetworkingPlayer server = null;
-        public NetworkingPlayer Server { get { return server; } }
+
+        public NetworkingPlayer Server => server;
 
         public virtual void Connect(string host, ushort port = DEFAULT_PORT)
         {
             if (Disposed)
-                throw new ObjectDisposedException("TCPClient", "This object has been disposed and can not be used to connect, please use a new TCPClient");
+                throw new ObjectDisposedException("TCPClient",
+                    "This object has been disposed and can not be used to connect, please use a new TCPClient");
             try
             {
                 client = new TcpClient(host, port); // constructor runs connect
@@ -58,27 +58,22 @@ namespace BeardedManStudios.Forge.Networking
             catch
             {
 #pragma warning disable 0618
-                if (ConnectAttemptFailed != null)
-				{
-                    ConnectAttemptFailed(this);
-                }
+                if (ConnectAttemptFailed != null) ConnectAttemptFailed(this);
 #pragma warning restore 0618
 
-				if (connectAttemptFailed != null)
-                {
-                    connectAttemptFailed(this);
-                }
+                if (connectAttemptFailed != null) connectAttemptFailed(this);
                 return;
             }
+
             // If we got this far then the bind was successful
             OnBindSuccessful();
             Initialize(host, port);
         }
+
         protected virtual void Initialize(string host, ushort port, bool pendCreates = true)
         {
-
             // By default pending creates should be true and flushed when ready
-            if(pendCreates)
+            if (pendCreates)
                 PendCreates = true;
 
             // Get a random hash key that needs to be used for validating that the server was connected to
@@ -123,6 +118,7 @@ namespace BeardedManStudios.Forge.Networking
                 Disconnect(true);
                 return;
             }
+
             if (!IsBound)
                 return;
             if (!client.Client.ReceiveAsync(e))
@@ -135,11 +131,11 @@ namespace BeardedManStudios.Forge.Networking
             if (e.BytesTransferred > 0 && e.SocketError == SocketError.Success)
             {
                 int bytesAlreadyProcessed = 0; // Count of the total freshly transferred bytes processed so far
-                ReceiveToken token = (ReceiveToken)e.UserToken;
+                ReceiveToken token = (ReceiveToken) e.UserToken;
                 if (!headerExchanged)
                 {
                     byte[] header = HandleHttpHeader(e, ref bytesAlreadyProcessed);
-                    token = (ReceiveToken)e.UserToken;
+                    token = (ReceiveToken) e.UserToken;
                     if (header == null)
                     {
                         DoRead(e);
@@ -152,7 +148,8 @@ namespace BeardedManStudios.Forge.Networking
                         e.UserToken = token;
 
                         // Ping the server to finalize the player's connection
-                        Send(Text.CreateFromString(Time.Timestep, InstanceGuid.ToString(), true, Receivers.Server, MessageGroupIds.NETWORK_ID_REQUEST, true));
+                        Send(Text.CreateFromString(Time.Timestep, InstanceGuid.ToString(), true, Receivers.Server,
+                            MessageGroupIds.NETWORK_ID_REQUEST, true));
                     }
                     else
                     {
@@ -165,15 +162,12 @@ namespace BeardedManStudios.Forge.Networking
                 while (bytesAlreadyProcessed < e.BytesTransferred)
                 {
                     byte[] data = HandleData(e, true, ref bytesAlreadyProcessed);
-                    if (data == null)
-                    {
-                        break;
-                    }
+                    if (data == null) break;
                     FrameStream frame = Factory.DecodeMessage(data, false, MessageGroupIds.TCP_FIND_GROUP_ID, Server);
 
                     FireRead(frame, Server);
-
                 }
+
                 DoRead(e);
             }
             else
@@ -181,6 +175,7 @@ namespace BeardedManStudios.Forge.Networking
                 Disconnect(true);
             }
         }
+
         private void RawWrite(byte[] data)
         {
 #if WINDOWS_UWP
@@ -230,7 +225,6 @@ namespace BeardedManStudios.Forge.Networking
         public override void Disconnect(bool forced)
         {
             if (client != null)
-            {
                 lock (client)
                 {
                     //disconnectedSelf = true;
@@ -239,7 +233,8 @@ namespace BeardedManStudios.Forge.Networking
                     if (forced)
                         client.Close();
                     else if (client.Connected)
-                        Send(new ConnectionClose(Time.Timestep, true, Receivers.Server, MessageGroupIds.DISCONNECT, true));
+                        Send(new ConnectionClose(Time.Timestep, true, Receivers.Server, MessageGroupIds.DISCONNECT,
+                            true));
 
                     // Send signals to the methods registered to the disconnec events
                     if (!forced)
@@ -250,14 +245,13 @@ namespace BeardedManStudios.Forge.Networking
                     for (int i = 0; i < Players.Count; ++i)
                         OnPlayerDisconnected(Players[i]);
                 }
-            }
         }
 
         public override void FireRead(FrameStream frame, NetworkingPlayer currentPlayer)
         {
             if (frame.GroupId == MessageGroupIds.AUTHENTICATION_CHALLENGE)
             {
-                if ((Me != null && Me.Connected) || authenticator == null)
+                if (Me != null && Me.Connected || authenticator == null)
                     return;
 
                 authenticator.AcceptChallenge(this, frame.StreamData, AuthServer, RejectServer);
@@ -299,7 +293,8 @@ namespace BeardedManStudios.Forge.Networking
         /// </summary>
         private void AuthServer(BMSByte buffer)
         {
-            Send(new Binary(Time.Timestep, true, buffer, Receivers.Server, MessageGroupIds.AUTHENTICATION_RESPONSE, true));
+            Send(new Binary(Time.Timestep, true, buffer, Receivers.Server, MessageGroupIds.AUTHENTICATION_RESPONSE,
+                true));
         }
 
         /// <summary>

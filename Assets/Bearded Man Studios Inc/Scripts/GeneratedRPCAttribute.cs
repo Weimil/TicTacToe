@@ -3,13 +3,13 @@
 namespace BeardedManStudios.Forge.Networking.Generated
 {
     [AttributeUsage(AttributeTargets.All)]
-    public class GeneratedRPCAttribute : System.Attribute
+    public class GeneratedRPCAttribute : Attribute
     {
         public readonly string JsonData;
 
         public GeneratedRPCAttribute(string data)
         {
-            this.JsonData = data;
+            JsonData = data;
         }
 
         public override string ToString()
