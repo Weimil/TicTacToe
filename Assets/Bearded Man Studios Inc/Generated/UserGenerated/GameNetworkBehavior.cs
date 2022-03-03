@@ -4,13 +4,12 @@ using UnityEngine;
 
 namespace BeardedManStudios.Forge.Networking.Generated
 {
-    [GeneratedRPC("{\"types\":[[\"int\", \"int\"][][]]")]
-    [GeneratedRPCVariableNames("{\"types\":[[\"buttonId\", \"playerId\"][][]]")]
+    [GeneratedRPC("{\"types\":[[\"int\", \"int\"][]]")]
+    [GeneratedRPCVariableNames("{\"types\":[[\"buttonId\", \"playerId\"][]]")]
     public abstract partial class GameNetworkBehavior : NetworkBehavior
     {
         public const byte RPC_TURN = 0 + 5;
         public const byte RPC_RESTART_GAME = 1 + 5;
-        public const byte RPC_SEND_LIVE_SIGNAL = 2 + 5;
 
         public GameNetworkNetworkObject networkObject = null;
 
@@ -26,7 +25,6 @@ namespace BeardedManStudios.Forge.Networking.Generated
             SetupHelperRpcs(networkObject);
             networkObject.RegisterRpc("Turn", Turn, typeof(int), typeof(int));
             networkObject.RegisterRpc("RestartGame", RestartGame);
-            networkObject.RegisterRpc("SendLiveSignal", SendLiveSignal);
 
             networkObject.onDestroy += DestroyGameObject;
 
@@ -126,11 +124,6 @@ namespace BeardedManStudios.Forge.Networking.Generated
         /// Arguments:
         /// </summary>
         public abstract void RestartGame(RpcArgs args);
-
-        /// <summary>
-        /// Arguments:
-        /// </summary>
-        public abstract void SendLiveSignal(RpcArgs args);
 
         // DO NOT TOUCH, THIS GETS GENERATED PLEASE EXTEND THIS CLASS IF YOU WISH TO HAVE CUSTOM CODE ADDITIONS
     }

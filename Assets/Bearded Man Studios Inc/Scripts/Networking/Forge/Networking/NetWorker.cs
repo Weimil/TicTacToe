@@ -813,8 +813,7 @@ namespace BeardedManStudios.Forge.Networking
 
             NetworkObject.PlayerAccepted(player, currentObjects);
 
-            if (playerAccepted != null)
-                playerAccepted(player, this);
+            playerAccepted?.Invoke(player, this);
         }
 
         /// <summary>

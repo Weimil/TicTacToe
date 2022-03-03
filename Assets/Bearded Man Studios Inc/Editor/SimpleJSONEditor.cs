@@ -580,13 +580,13 @@ namespace SimpleJSONEditor
             return ctx;
         }
 
-        public virtual void Serialize(System.IO.BinaryWriter aWriter)
+        public virtual void Serialize(BinaryWriter aWriter)
         {
         }
 
-        public void SaveToStream(System.IO.Stream aData)
+        public void SaveToStream(Stream aData)
         {
-            BinaryWriter W = new System.IO.BinaryWriter(aData);
+            BinaryWriter W = new BinaryWriter(aData);
             Serialize(W);
         }
 
@@ -612,7 +612,7 @@ namespace SimpleJSONEditor
 		}
 
 #else
-        public void SaveToCompressedStream(System.IO.Stream aData)
+        public void SaveToCompressedStream(Stream aData)
         {
             throw new Exception(
                 "Can't use compressed functions. You need include the SharpZipLib and uncomment the define at the top of SimpleJSON");
@@ -633,7 +633,7 @@ namespace SimpleJSONEditor
 
         public string SaveToBase64()
         {
-            using (MemoryStream stream = new System.IO.MemoryStream())
+            using (MemoryStream stream = new MemoryStream())
             {
                 SaveToStream(stream);
                 stream.Position = 0;
@@ -641,7 +641,7 @@ namespace SimpleJSONEditor
             }
         }
 
-        public static JSONNode Deserialize(System.IO.BinaryReader aReader)
+        public static JSONNode Deserialize(BinaryReader aReader)
         {
             JSONBinaryTag type = (JSONBinaryTag) aReader.ReadByte();
             switch (type)
@@ -716,7 +716,7 @@ namespace SimpleJSONEditor
                 "Can't use compressed functions. You need include the SharpZipLib and uncomment the define at the top of SimpleJSON");
         }
 
-        public static JSONNode LoadFromCompressedStream(System.IO.Stream aData)
+        public static JSONNode LoadFromCompressedStream(Stream aData)
         {
             throw new Exception(
                 "Can't use compressed functions. You need include the SharpZipLib and uncomment the define at the top of SimpleJSON");
@@ -729,9 +729,9 @@ namespace SimpleJSONEditor
         }
 #endif
 
-        public static JSONNode LoadFromStream(System.IO.Stream aData)
+        public static JSONNode LoadFromStream(Stream aData)
         {
-            using (BinaryReader R = new System.IO.BinaryReader(aData))
+            using (BinaryReader R = new BinaryReader(aData))
             {
                 return Deserialize(R);
             }
@@ -740,7 +740,7 @@ namespace SimpleJSONEditor
         public static JSONNode LoadFromBase64(string aBase64)
         {
             byte[] tmp = Convert.FromBase64String(aBase64);
-            MemoryStream stream = new System.IO.MemoryStream(tmp);
+            MemoryStream stream = new MemoryStream(tmp);
             stream.Position = 0;
             return LoadFromStream(stream);
         }
@@ -857,7 +857,7 @@ namespace SimpleJSONEditor
             return ret;
         }
 
-        public override void Serialize(System.IO.BinaryWriter aWriter)
+        public override void Serialize(BinaryWriter aWriter)
         {
             aWriter.Write((byte) JSONBinaryTag.Array);
             aWriter.Write(m_List.Count);
@@ -1017,7 +1017,7 @@ namespace SimpleJSONEditor
             return ret;
         }
 
-        public override void Serialize(System.IO.BinaryWriter aWriter)
+        public override void Serialize(BinaryWriter aWriter)
         {
             aWriter.Write((byte) JSONBinaryTag.Class);
             aWriter.Write(m_Dict.Count);
@@ -1157,7 +1157,7 @@ namespace SimpleJSONEditor
             }
         }
 
-        public override void Serialize(System.IO.BinaryWriter aWriter)
+        public override void Serialize(BinaryWriter aWriter)
         {
             JSONData tmp = new JSONData("");
 

@@ -880,8 +880,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sprites:
   - {fileID: 21300000, guid: 54467e5e8f053816483a60de021b2cb9, type: 3}
-  - {fileID: 21300000, guid: 4b197c6fc145f475b9ccd9612761b63f, type: 3}
-  - {fileID: 21300000, guid: a937be93f0f29241582ca2ce43189574, type: 3}
+  - {fileID: 21300000, guid: 0fbbe6a7a7b6fb23e9e308443cf1a57c, type: 3}
+  - {fileID: 21300000, guid: 3ed84e8ce3bc9c107977ef44cccdd435, type: 3}
 --- !u!1 &699402648
 GameObject:
   m_ObjectHideFlags: 0

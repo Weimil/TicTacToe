@@ -1,23 +1,19 @@
 using System;
-using System.Collections;
 using System.Linq;
 using BeardedManStudios.Forge.Networking;
 using BeardedManStudios.Forge.Networking.Generated;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Game : GameNetworkBehavior
 {
-    [SerializeField] private Sprite[] _sprites;
-    private WaitForSeconds _waitForSeconds;
+    [SerializeField] private Sprite[] sprites;
     private GameObject _buttonParent;
     private Button[] _buttons;
     private Text[] _buttonsText;
     private GameObject _gameOverParent;
     private Button _restart;
     private int _playerId;
-    private Coroutine _selfDestruction;
 
     private void Start()
     {
@@ -26,62 +22,53 @@ public class Game : GameNetworkBehavior
         _restart = _gameOverParent.GetComponentInChildren<Button>();
         _buttons = _buttonParent.GetComponentsInChildren<Button>();
         _buttonsText = new Text[_buttons.Length];
-        _restart.onClick.AddListener(ExecuteRestartGame);
-        _waitForSeconds = new WaitForSeconds(5f);
-
+        _restart.onClick.AddListener(() => networkObject.SendRpc(RPC_RESTART_GAME, Receivers.All));
+        _restart.GetComponentInChildren<Text>().text = "Restart";
         for (int i = 0; i < _buttons.Length; i++)
         {
             int nI = i;
             _buttonsText[i] = _buttons[i].GetComponentInChildren<Text>();
             _buttonsText[i].color = new Color(0, 0, 0, 0);
-            _buttons[i].onClick.AddListener(delegate { ExecuteTurn(nI); });
+            _buttons[i].onClick.AddListener(() => ExecuteTurn(nI));
         }
-
         GameDefaults();
     }
 
     private void ExecuteTurn(int buttonId)
     {
         if (_buttonsText[buttonId].text != "0") return;
-        if (networkObject.IsServer)
+        switch (_playerId)
         {
-            if (_playerId == 1)
+            case 1 when networkObject.IsServer:
+            case 2 when !networkObject.IsServer:
                 networkObject.SendRpc(RPC_TURN, Receivers.All, buttonId, _playerId);
-        }
-        else
-        {
-            if (_playerId == 2)
-                networkObject.SendRpc(RPC_TURN, Receivers.All, buttonId, _playerId);
+                break;
         }
     }
 
     public override void Turn(RpcArgs args)
     {
-        int button = args.GetNext<int>();
+        int buttonId = args.GetNext<int>();
         int playerId = args.GetNext<int>();
         string playerIdStr = Convert.ToString(playerId);
         _playerId = playerId == 1 ? 2 : 1;
-        _buttons[button].image.sprite = _sprites[playerId];
-        _buttonsText[button].text = playerIdStr;
-        if (IsGameOver(playerIdStr))
-        {
-            _gameOverParent.SetActive(true);
-            _buttonParent.SetActive(false);
-        }
+        _buttons[buttonId].image.sprite = sprites[playerId];
+        _buttonsText[buttonId].text = playerIdStr;
+        if (!IsGameOver(playerIdStr)) return;
+        foreach (Button button in _buttons) button.enabled = false;
+        Invoke(nameof(Win), 2f);
     }
 
-    private void ExecuteRestartGame()
+    private void Win()
     {
-        networkObject.SendRpc(
-            RPC_RESTART_GAME,
-            Receivers.All
-        );
+        _buttonParent.SetActive(false);
+        _gameOverParent.SetActive(true);
+        _gameOverParent.GetComponentInChildren<Text>().text = _playerId == 1 ? "0" : "X" + "Wins!";
     }
 
-    public override void RestartGame(RpcArgs args)
-    {
-        GameDefaults();
-    }
+    
+    
+    public override void RestartGame(RpcArgs args) => GameDefaults();
 
     private bool IsGameOver(string str)
     {
@@ -95,57 +82,19 @@ public class Game : GameNetworkBehavior
                 _buttonsText[2].text == str && _buttonsText[5].text == str && _buttonsText[8].text == str ||
                 _buttonsText[2].text == str && _buttonsText[4].text == str && _buttonsText[6].text == str ||
                 _buttonsText[0].text == str && _buttonsText[4].text == str && _buttonsText[8].text == str;
-
         return true;
     }
 
     private void GameDefaults()
     {
-        foreach (Button button in _buttons) button.image.sprite = _sprites[0];
+        foreach (Button button in _buttons)
+        {
+            button.enabled = true;
+            button.image.sprite = sprites[0];
+        }
         foreach (Text buttonText in _buttonsText) buttonText.text = "0";
         _playerId = 1;
         _buttonParent.SetActive(true);
         _gameOverParent.SetActive(false);
-    }
-
-    protected override void NetworkStart()
-    {
-        base.NetworkStart();
-
-        if (networkObject.IsOwner)
-            StartCoroutine(LifeSignal());
-        else
-            _selfDestruction = StartCoroutine(SelfDestruction());
-
-    }
-    
-    private void ExecuteSendLiveSignal()
-    {
-        networkObject.SendRpc(
-            RPC_SEND_LIVE_SIGNAL,
-            Receivers.Others
-        );
-    }
-
-    public override void SendLiveSignal(RpcArgs args)
-    {
-        StopCoroutine(_selfDestruction);
-        _selfDestruction = StartCoroutine(SelfDestruction());
-    }
-
-    private IEnumerator LifeSignal()
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(2f);
-            ExecuteSendLiveSignal();
-        }
-    }
-
-    private IEnumerator SelfDestruction()
-    {
-        yield return new WaitForSeconds(4f);
-        SceneManager.UnloadSceneAsync("SampleScene");
-        SceneManager.LoadScene("MultiplayerMenu");
     }
 }
