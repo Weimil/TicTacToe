@@ -3,15 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="b5d1e6c9-f98c-497e-84fe-0700beefb8c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TicTacToe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TicTacToe/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/SimpleJSONEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Editor/SimpleJSONEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/GameNetworkBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Generated/UserGenerated/GameNetworkBehavior.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/NetWorker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/NetWorker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/SimpleJSON.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/SimpleJSON.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/GUICross.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/GUICross.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/GUIZero.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/GUIZero.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Multiplayer Menu/MultiplayerMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Multiplayer Menu/MultiplayerMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/ExampleCross.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/ExampleCross.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/ExampleZero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/ExampleZero.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/GUIEmpty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/GUIEmpty.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Highlight.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Highlight.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Zero.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Zero.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Zero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Zero.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +34,7 @@
     <changedPaths>
       <option value="$USER_HOME$/Class/DAM-2/PSP/_Downloads/20220114 Desconnexio/Assets/Usuari.cs" />
       <option value="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Networking/Forge/Networking/NetWorker.cs" />
+      <option value="$PROJECT_DIR$/Assets/Bearded Man Studios Inc/Scripts/Multiplayer Menu/MultiplayerMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Game.cs" />
     </changedPaths>
   </component>
@@ -97,7 +102,10 @@
       <workItem from="1646329281892" duration="144000" />
       <workItem from="1646329485064" duration="728000" />
       <workItem from="1646333981865" duration="2924000" />
-      <workItem from="1646336919797" duration="1838000" />
+      <workItem from="1646336919797" duration="2442000" />
+      <workItem from="1646347086706" duration="1007000" />
+      <workItem from="1646355000004" duration="355000" />
+      <workItem from="1646377927456" duration="3773000" />
     </task>
     <servers />
   </component>
